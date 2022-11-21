@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "copy-static": "cp -R docs dist; cp -R static dist",
     "build": "vite build; npm run copy-static",
-    "dev": "vite"
+    "dev": "vite",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
