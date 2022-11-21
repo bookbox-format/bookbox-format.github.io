@@ -1,0 +1,97 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.logo > div {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 32px;
+  border-radius: 50%;
+}
+
+.quick {
+  margin: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.quick > a {
+  cursor: pointer;
+  text-decoration: none;
+  margin: auto;
+  border: none;
+  font-size: 2rem;
+  border-radius: 16px;
+  padding: 16px;
+  border: 5px solid var(--book-box-color-name-red);
+  background: linear-gradient(
+    37deg,
+    var(--book-box-color-name-yellow),
+    var(--book-box-color-name-green-light),
+    var(--book-box-color-name-cyan),
+    var(--book-box-color-name-blue)
+  );
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: 0 0 1rem black;
+}
+
+.quick > a:hover {
+  background: var(--book-box-color-name-red);
+}
+
+article {
+  max-width: calc(100% - 32px);
+}
+
+.pipeline {
+  margin: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pipeline img {
+  max-width: 700px;
+}
+
+.compare {
+  overflow: scroll;
+}
+
+.home {
+  padding: 8px;
+}
+
+.home h1,
+.home h2 {
+  margin: 8px 0;
+}
+
+.home h1 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 90px;
+  color: var(--book-box-color-name-blue-dark);
+  color: var(--book-box-color-name-red);
+}
+
+@media (max-width: 500px) {
+  .home h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 250px) {
+  .home h1 {
+    font-size: 35px;
+  }
+}
+
+.home h2 {
+  text-align: center;
+  color: var(--book-box-color-name-red);
+  color: var(--book-box-color-name-dark);
+}

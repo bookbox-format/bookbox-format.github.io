@@ -1,0 +1,76 @@
+.t.str {
+    color: var(--book-box-color-name-green-light);
+}
+
+.t.key {
+    color: var(--book-box-color-name-violet-light);
+}
+
+.t.op {
+    color: var(--book-box-color-name-cyan);
+}
+
+.t.func {
+    color: var(--book-box-color-name-blue-sky);
+}
+
+.t.var {
+    color: var(--book-box-color-name-red-light);
+}
+
+.t.type {
+    color: var(--book-box-color-name-yellow);
+}
+
+.example {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    grid-template-columns: auto 100px auto;
+    margin: 100px 0;
+}
+
+@media (max-width: 600px) {
+    .example {
+        grid-template-columns: auto;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    .example > span {
+        transform: rotate(90deg);
+    }
+}
+
+.example > code,
+.example > div {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.example > code {
+    width: 100%;
+    max-width: 90vw;
+    overflow: auto;
+}
+
+.example > div {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+}
+
+.example > code {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(224, 224, 224);
+}
+
+.example > span {
+    font-size: 50px;
+    margin: 16px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}

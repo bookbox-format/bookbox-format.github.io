@@ -1,0 +1,41 @@
+{
+  "name": "bookbox-format.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy-static": "cp -R docs dist; cp -R static dist",
+    "build": "vite build; npm run copy-static",
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bookbox-format/bookbox-format.github.io.git"
+  },
+  "keywords": [
+    "bookbox"
+  ],
+  "author": "nikalexxx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bookbox-format/bookbox-format.github.io/issues"
+  },
+  "homepage": "https://github.com/bookbox-format/bookbox-format.github.io#readme",
+  "dependencies": {
+    "@bookbox/preset-web": "^0.1.1",
+    "katex": "^0.16.3",
+    "mermaid": "^9.2.0",
+    "solid-js": "^1.5.7"
+  },
+  "devDependencies": {
+    "babel-preset-solid": "^1.5.7",
+    "gh-pages": "^4.0.0",
+    "typescript": "^4.8.4",
+    "vite": "^3.1.8",
+    "vite-plugin-solid": "^2.3.9"
+  }
+}
