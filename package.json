@@ -28,6 +28,7 @@
   "homepage": "https://github.com/bookbox-format/bookbox-format.github.io#readme",
   "dependencies": {
     "@bookbox/preset-web": "^0.1.1",
+    "@vercel/speed-insights": "^1.0.12",
     "katex": "^0.16.3",
     "mermaid": "^9.2.0",
     "solid-js": "^1.5.7"

@@ -1,5 +1,5 @@
 import { Component, onMount } from 'solid-js';
-import { browserInit, render, core, HtmlToken, RenderOptions } from '@bookbox/preset-web';
+import { browserInit, render, RenderOptions } from '@bookbox/preset-web';
 
 browserInit();
 
